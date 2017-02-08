@@ -2,10 +2,13 @@
   "name": "idea2bluej",
   "version": "0.1.1",
   "description": "Simple CLI tool to generate a BlueJ compatible project from a given IntelliJ IDEA project.",
-  "bin":{
+  "bin": {
     "idea2bluej": "./bin/idea2bluej.js"
   },
   "main": "index.js",
+  "scripts": {
+    "lint": "standard --fix"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/varbrad/idea2bluej.git"
@@ -25,9 +28,11 @@
   },
   "homepage": "https://github.com/varbrad/idea2bluej#readme",
   "dependencies": {
+    "chalk": "^1.1.3",
+    "fs-extra": "^2.0.0",
     "yargs": "^6.6.0"
   },
-  "scripts": {
-    "start": "node ./bin/idea2bluej.js"
+  "devDependencies": {
+    "standard": "^8.6.0"
   }
 }

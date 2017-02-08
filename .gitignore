@@ -6,3 +6,7 @@ pids
 .node_repl_history
 node_modules
 .DS_Store
+test-in
+test-out
+bin/test-in
+bin/test-out
