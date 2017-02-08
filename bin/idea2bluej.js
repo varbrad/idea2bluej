@@ -16,7 +16,7 @@ var argv = require('yargs')
 
 function error (message) {
   console.log(chalk.bgRed(message))
-  console.log(chalk.bgRed('Usage: ' + argv.$0 + ' --projectIn [IntelliJ IDEA project path]'))
+  console.log(chalk.bgRed('Usage: idea2bluej --projectIn [IntelliJ IDEA project path]'))
 }
 
 function log (message) {
@@ -32,10 +32,10 @@ function run () {
 
   // First, join input/output paths
   log('Resolving file paths...')
-  const input = path.join(__dirname, argv.projectIn)
-  const inputLibsPath = path.join(__dirname, argv.projectIn, argv.libs)
-  const inputSrcPath = path.join(__dirname, argv.projectIn, argv.src)
-  const output = path.join(__dirname, argv.projectOut)
+  const input = path.join(process.cwd(), argv.projectIn)
+  const inputLibsPath = path.join(process.cwd(), argv.projectIn, argv.libs)
+  const inputSrcPath = path.join(process.cwd(), argv.projectIn, argv.src)
+  const output = path.join(process.cwd(), argv.projectOut)
 
   // Ensure all paths exist
   if (!idea2bluej.isDirectory(input)) return error('IntelliJ IDEA project folder "' + input + '" not found!')
@@ -51,8 +51,8 @@ function run () {
 
   // Resolve generated paths
   log('Resolving generated file paths...')
-  const outputLibsPath = path.join(__dirname, argv.projectOut, argv.libs)
-  const outputSrcPath = path.join(__dirname, argv.projectOut, argv.src)
+  const outputLibsPath = path.join(process.cwd(), argv.projectOut, argv.libs)
+  const outputSrcPath = path.join(process.cwd(), argv.projectOut, argv.src)
 
   // Rename libs folder to '+libs'
   log('Renaming library folder...')
