@@ -19,9 +19,9 @@ Install as a global node package.
 npm install idea2bluej -g
 ````
 
-Provide paths to input project (IntelliJ IDEA) and output folder (BlueJ folder).
+Provide paths to input project (IntelliJ IDEA project folder) and output folder (BlueJ folder).
 ````shell
-idea2bluej [input] [output]
+idea2bluej [input-folder] [output-folder]
 ````
 
 ### Optional parameters
@@ -33,3 +33,8 @@ idea2bluej [input] [output]
 
 ### Optional Flags
 `-q` Runs in 'quiet' mode (Equivalent to `--quiet` above)
+
+### Deprecated Flags
+`--projectIn` Replaced by unnamed argument (__required__)
+
+`--projectOut` Replace by unnamed argument (__required__)
