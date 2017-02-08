@@ -1,0 +1,27 @@
+{
+  "name": "idea2bluej",
+  "version": "0.1.0",
+  "description": "Simple CLI tool to generate a BlueJ compatible project from a given IntelliJ IDEA project.",
+  "main": "idea2bluej.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varbrad/idea2bluej.git"
+  },
+  "keywords": [
+    "bluej",
+    "cli",
+    "intellij",
+    "java",
+    "node",
+    "nodejs"
+  ],
+  "author": "Brad Davies (varbrad)",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/varbrad/idea2bluej/issues"
+  },
+  "homepage": "https://github.com/varbrad/idea2bluej#readme",
+  "dependencies": {
+    "yargs": "^6.6.0"
+  }
+}
