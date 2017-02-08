@@ -11,8 +11,10 @@ console.log(chalk.blue('IDEA2BlueJ v' + version + '\n'))
 var argv = require('yargs')
   .default('libs', '+libs')
   .default('src', 'src')
-  .default('projectOut', 'BlueJ')
   .argv
+
+if (argv._.length > 1) argv.projectOut = argv._[1]
+if (argv._.length > 0) argv.projectIn = argv._[0]
 
 function error (message) {
   console.log(chalk.bgRed(message))
