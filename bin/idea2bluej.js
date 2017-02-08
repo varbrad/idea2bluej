@@ -83,7 +83,7 @@ function run () {
 
   let end = process.hrtime(start)
   let seconds = end[0] + (end[1] * 1e-9)
-  console.log(chalk.green('Project converted in ' + seconds.toFixed(3) + 's\n'))
+  console.log(chalk.green('Project converted in ' + seconds.toFixed(3) + 's'))
 }
 
 run()
