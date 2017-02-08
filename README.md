@@ -25,9 +25,9 @@ idea2bluej [input] [output]
 ````
 
 ### Optional parameters
-`--src` Defaults to a folder named `src` within your input project folder.
+`--src` Defaults to a folder named `'src'` within your input project folder.
 
-`--libs` Defaults to a folder named `+libs` within your input project folder.
+`--libs` Defaults to a folder named `'+libs'` within your input project folder.
 
 `--quiet` Default to `false`. If true, then intermediate progress log messages are supressed.
 
