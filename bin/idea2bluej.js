@@ -61,16 +61,22 @@ function run () {
     return error('Could not rename libs path "' + outputLibsPath + '" to "+libs"!')
   }
 
+  // Inject package.bluej folders
+  log('Injecting BlueJ project package files...')
+  if (!idea2bluej.injectBlueJPackages(outputSrcPath)) {
+    return error('Could not inject BlueJ project package files!')
+  }
+
   // Move all folders within 'src' up a directory
   log('Moving source directory up...')
   if (!idea2bluej.moveAllInDir(outputSrcPath, path.dirname(outputSrcPath))) {
     return error('Could not move source path "' + outputSrcPath + '" to project root directory!')
   }
 
-  // Inject package.bluej folders
-  log('Injecting BlueJ project package files...')
-  if (!idea2bluej.injectBlueJPackages(output)) {
-    return error('Could not inject BlueJ project package files!')
+  // 7, Remove .iml file and '.idea' folder
+  log('Removing IntelliJ IDEA project files...')
+  if (!idea2bluej.removeProjectFiles(output)) {
+    return error('Could not remove IntelliJ IDEA project files!')
   }
 
   let end = process.hrtime(start)
