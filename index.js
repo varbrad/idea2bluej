@@ -90,7 +90,7 @@ module.exports = {
       let files = fs.readdirSync(this.output)
       for (let i = 0; i < files.length; ++i) {
         let name = files[i]
-        if (name.match(/(\.iml)|(\.idea)|(\.git)$/g)) fs.removeSync(path.join(this.output, name))
+        if (name.match(/(\.iml)|(\.idea)|(\.git)|(out)$/g)) fs.removeSync(path.join(this.output, name))
       }
       return true
     }
