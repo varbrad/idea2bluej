@@ -17,7 +17,7 @@ if (argv._.length > 0) argv.projectIn = argv._[0]
 
 function error (message) {
   console.log(chalk.bgRed(message))
-  console.log(chalk.bgRed('Usage: idea2bluej --projectIn [IntelliJ IDEA project path]'))
+  console.log(chalk.bgRed('Usage: idea2bluej [IntelliJ IDEA project path] [BlueJ output path]'))
 }
 
 function log (message) {
