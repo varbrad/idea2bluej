@@ -1,7 +1,8 @@
 # IDEA2BlueJ
-Simple CLI tool to generate a BlueJ compatible project from a given IntelliJ IDEA project.
+Simple CLI tool to generate a BlueJ Java compatible project from a given IntelliJ IDEA Java project.
 
 [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+![License - GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)
 
 ## Steps
 1. Ensure source project path and libs/src paths are valid.
@@ -10,8 +11,7 @@ Simple CLI tool to generate a BlueJ compatible project from a given IntelliJ IDE
 4. Rename libs folder to '+libs'.
 5. Inject empty 'package.bluej' folders into every directory from 'src' downwards.
 6. Move all contents of 'src' up into root directory.
-7. Remove '.iml' files and the '.idea' folder.
-8. Remove any '.git' folder (ensuring VC is not affected).
+7. Remove IntelliJ project files and folders, and any .git folder (to stop VC issues).
 
 ## Usage
 Install as a global node package.
