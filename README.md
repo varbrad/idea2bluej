@@ -1,7 +1,9 @@
 # IDEA2BlueJ
 Simple CLI tool to generate a BlueJ Java compatible project from a given IntelliJ IDEA Java project.
 
-[![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+[![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+[![npm Dependencies Status](https://david-dm.org/varbrad/idea2bluej/status.svg)
+[![npm DevDependencies Status](https://david-dm.org/varbrad/idea2bluej/dev-status.svg)
 ![License - GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)
 
 ## Steps
