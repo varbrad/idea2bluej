@@ -1,15 +1,13 @@
-# IDEA2BlueJ
-Simple CLI tool to generate a BlueJ Java compatible project from a given IntelliJ IDEA Java project.
+<p align="center"><img src="http://i.imgur.com/EdVkEWb.png" alt="IDEA2BlueJ"></p>
 
-[![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
-[![npm Dependencies Status](https://david-dm.org/varbrad/idea2bluej/status.svg)](https://david-dm.org/varbrad/idea2bluej)
-[![npm DevDependencies Status](https://david-dm.org/varbrad/idea2bluej/dev-status.svg)](https://david-dm.org/varbrad/idea2bluej?type=dev)
-[![TravisCI Build Status](https://travis-ci.org/varbrad/idea2bluej.svg?branch=master)](https://travis-ci.org/varbrad/idea2bluej)
-![License - GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)
-
-![npm Information Banner](https://nodei.co/npm/idea2bluej.png?downloads=true&downloadRank=true)
-
-[![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+<p align="center">
+  <a href="http://standardjs.com/"><img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg" alt="Code Style - Standard"></a>
+  <a href="https://david-dm.org/varbrad/idea2bluej"><img src="https://david-dm.org/varbrad/idea2bluej/status.svg" alt="npm Dependencies Status"></a>
+  <a href="https://david-dm.org/varbrad/idea2bluej?type=dev"><img src="https://david-dm.org/varbrad/idea2bluej/dev-status.svg" alt="npm DevDependencies Status"></a>
+  <a href="https://travis-ci.org/varbrad/idea2bluej"><img src="https://travis-ci.org/varbrad/idea2bluej.svg?branch=master" alt="TravisCI Build Status"></a>
+  <img src="https://img.shields.io/badge/license-GPL--3.0-blue.svg" alt="License - GPL-3.0"><br>
+  <a href="https://www.npmjs.com/package/idea2bluej"><img src="https://nodei.co/npm/idea2bluej.png?downloads=true&downloadRank=true" alt="npm Information Banner"></a>
+</p>
 
 ## Steps
 1. Ensure source project path and libs/src paths are valid.
