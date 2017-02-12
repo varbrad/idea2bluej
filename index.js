@@ -56,6 +56,9 @@ module.exports = {
   injectPackages: function () {
     if (this.output && this.src) {
       let dirs = [path.join(this.output, this.src)]
+      // Inject bluej.pkg for older versions of bluej
+      fs.writeFileSync(path.join(dirs[0], 'bluej.pkg'), '')
+      // Inject package.bluej for all source dirs
       while (dirs.length > 0) {
         let files = fs.readdirSync(dirs[0])
         for (let i = 0; i < files.length; ++i) {
