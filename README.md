@@ -9,14 +9,7 @@
   <a href="https://www.npmjs.com/package/idea2bluej"><img src="https://nodei.co/npm/idea2bluej.png?downloads=true&downloadRank=true" alt="npm Information Banner"></a>
 </p>
 
-## Steps
-1. Ensure source project path and libs/src paths are valid.
-2. Clone entire project structure.
-3. Ensure generated output project path and libs/src paths are valid.
-4. Rename libs folder to '+libs'.
-5. Inject empty 'package.bluej' folders into every directory from 'src' downwards.
-6. Move all contents of 'src' up into root directory.
-7. Remove IntelliJ project files and folders, and any .git folder (to stop VC issues).
+Creates a BlueJ compatible project structure from a given IntelliJ IDEA project folder.
 
 ## Usage
 Install as a global node package.
